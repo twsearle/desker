@@ -1,6 +1,13 @@
 # desker
 Calculate optimal layout of office space given constraints
 
+This repository will consist of two components:
+  1. A survey (using jupter notebook interactive sliders)
+  2. An optimiser that uses the survey results and the constraints to calculate
+     the optimum layout.
+
+
+## The optimisation problem
 
 This is a simple optimisation problem. Given a set of constraints, e.g on:
    * cost
@@ -14,6 +21,8 @@ and a set of variables, e.g:
    * number of meeting areas (informal)
 
 Maximise worker satisfaction.
+
+### Specifying the objective function
 
 Worker satisfaction is our objective function. We can determine the form of the
 function by a survey to determine what each individual counts as their optimal
@@ -33,7 +42,7 @@ worker (`n` from `0` to `N`) for each variable (`m`) obtained from the survey.
  We can then apply a optimisation method to optimise this function subject to
 the constraints above.
 
-## Specifying the constraints on the variables
+### Specifying the constraints on the variables
 
 For each desk there will be an associated capacity, budgetary cost and square-footage. The cost constraint will be something like:
 
@@ -52,4 +61,10 @@ to constrain the problem. I suspect we might need to underweight the occupancy
 value of meeting spaces, because most meetings do not use all the chairs in the
 meeting space.
 
+## The survey
+
+The survey will be subject to the same constraints to specify the problem so
+that each individual can perform their own personal optimisation! There does
+need to be one additional constraint in the survey, and that is to limit the
+total preference credits used to 100.
 
