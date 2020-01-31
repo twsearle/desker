@@ -22,8 +22,7 @@ constraints above.
 
  Perhaps the objective function would be something like:
 
-#href="https://www.codecogs.com/eqnedit.php?latex=f(v_{m})&space;=&space;\sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n}^{2}w_{n}}v_{m}"  
-<img src="https://latex.codecogs.com/gif.latex?f(v_{m})&space;=&space;\sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n}^{2}w_{n}}v_{m}" title="f(v_{m}) = \sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n}^{2}w_{n}}v_{m}" >
+<img src="https://latex.codecogs.com/gif.latex?f(v_{m})&space;=&space;\sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n,m}^{2}w_{n,m}}v_{m}" title="f(v_{m}) = \sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n,m}^{2}w_{n,m}}v_{m}" >
 
 Where the `v_{m}` are our variables up to `m` variables, and the `p_{n,m}`,
 `w_{n,m}` are the worker preference strengths and variable values for each
