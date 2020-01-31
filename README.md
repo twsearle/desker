@@ -6,11 +6,13 @@ This is a simple optimisation problem. Given a set of constraints, e.g on:
    * cost
    * space
    * number of workers
+
 and a set of variables, e.g:
    * number of quiet desks
    * number of medium-quiet desks
    * number of meeting areas (formal)
    * number of meeting areas (informal)
+
 Maximise worker satisfaction.
 
 Worker satisfaction is our objective function. We can determine the form of the
