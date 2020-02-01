@@ -33,7 +33,7 @@ constraints above.
 
  Perhaps the objective function would be something like:
 
-<img src="https://latex.codecogs.com/gif.latex?f(v_{m})&space;=&space;\sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n,m}^{2}w_{n,m}}v_{m}" title="f(v_{m}) = \sum_{m=0}^{M}\sum_{n=0}^{N}{p_{n,m}^{2}w_{n,m}}v_{m}" >
+<img src="https://latex.codecogs.com/gif.latex?f(v_{m})&space;=&space;\sum_{m=0}^{M}\sum_{n=0}^{N}{\sqrt{p_{n,m}}w_{n,m}}v_{m}" title="f(v_{m}) = \sum_{m=0}^{M}\sum_{n=0}^{N}{\sqrt{p_{n,m}}w_{n,m}}v_{m}" >
 
 Where the `v_{m}` are our variables up to `M` total variables, and the `p_{n,m}`,
 `w_{n,m}` are the worker preference strengths and variable values for each
@@ -54,7 +54,7 @@ Similarly for the space constraint:
 
 And for the population constraint:
 
-<img src="https://latex.codecogs.com/gif.latex?P&space;=&space;\sum_{m=0}^{M}{p_{m}v_{m}}" title="P = \sum_{m=0}^{M}{p_{m}v_{m}}" >
+<img src="https://latex.codecogs.com/gif.latex?Q&space;=&space;\sum_{m=0}^{M}{q_{m}v_{m}}" title="Q = \sum_{m=0}^{M}{q_{m}v_{m}}" >
 
 I need someone who makes the decisions to specify all of these `c's` and `s's`
 to constrain the problem. I suspect we might need to underweight the occupancy
